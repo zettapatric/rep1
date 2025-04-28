@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAYHub</title>
+    <title>PayHub</title>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home.css">
 </head>
 <body>
     <div class="nav">
         <span class="logo">PAYHub</span>
-        <a href="#" id="homeLink"><i class="fas fa-home"></i> Home</a>
+        <a href="home.html" id="homeLink"><i class="fas fa-home"></i> Home</a>
         <a href="#" id="sendLink"><i class="fas fa-wallet"></i> Send Money</a>
-        <a href="balance.html" id="balanceLink"><i class="fas fa-credit-card"></i> Balance</a>
+        <a href="./balance.html" id="balanceLink"><i class="fas fa-credit-card"></i> Balance</a>
         <a href="#" id="historyLink"><i class="fas fa-history"></i> History</a>
         <a href="#" id="signinLink"><i class="fas fa-sign-in-alt"></i> Sign In</a>
         <a href="#" id="signupLink"><i class="fas fa-user-plus"></i> Sign Up</a>
@@ -21,51 +21,15 @@
     <div class="section-content" id="homeContent" style="display: block; width: 5000px; height: 1000px;">
         <h2>Welcome to PAYHub!</h2>
         <p>Your secure and easy digital payment solution.</p>
-        <p>Payhub helps people's in the world to save his/her</p>
-        <p>money and easy deposite/withdraw money and send to someone </p>
-        <p>means that, it is work as mobile money, banking service</p>
-        <p>it comes to simplify all activities done with those</p>
-        <p>paid services above. </p>
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy 2025 payhub.</p>
-                <p>your can join to payhub </p>
-                <p>by using sicial media here</p>
-                <div class="social-icon">
-                    <a href="https://facebook.com" target="_blank" aria-label="facebook">facebook</a>
-                    <a href="https://twitter.com" target="_blank" aria-label="twitter">Twitter</a>
-                    <a href="https://instagram.com" target="_blank" aria_label="instagram">instagram</a>
-                    <a href="https://linkedIn.com" target="_blank" aria_label="linkedIn">linkedIn</a>
-                </div>
-            </div>
-        </footer>
     </div>
-
-
-    <div class="section-content" id="sendContent" style="margin-top: 300px;">
+    <div class="section-content" id="sendContent">
         <h2><i class="fas fa-wallet"></i> Send Money</h2>
         <p>Send money instantly to anyone, anytime.</p>
-        <p>by entering your recievers number and amount </p>
-        <p>you are going to pay and then enter </p>
-        <p>your password to comfirm the action</p>
         <div class="send-form">
             <input type="text" placeholder="Enter recipient's number" id="recipientNumber">
             <input type="number" placeholder="Enter amount" id="amount" min="1" step="any">
             <input type="password" placeholder="Enter your PIN" id="pin">
             <button class="btn" id="sendMoneyButton"><i class="fas fa-paper-plane"></i> Send Money</button>
-            <footer class="footer" style="background-color: #353434; margin-top: 40px;">
-                <div class="footer-content">
-                    <p>&copy 2025 payhub.</p>
-                    <p>your can join to payhub </p>
-                    <p>by using sicial media here</p>
-                    <div class="social-icon">
-                        <a href="https://facebook.com" target="_blank" aria-label="facebook">facebook</a>
-                        <a href="https://twitter.com" target="_blank" aria-label="twitter">Twitter</a>
-                        <a href="https://instagram.com" target="_blank" aria_label="instagram">instagram</a>
-                        <a href="https://linkedIn.com" target="_blank" aria_label="linkedIn">linkedIn</a>
-                    </div>
-                </div>
-            </footer>
         </div>
     </div>
     
@@ -88,9 +52,16 @@
         <input type="text" placeholder="Enter email" id="signupEmail">
         <input type="password" placeholder="Enter password" id="signupPassword">
         <button class="btn" id="signupButton"><i class="fas fa-user-check"></i> Register</button>
-    </div> 
-    
-    <script src="./script.js"></script>
+    </div>
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Send Money</a></li>
+          <li><a href="#">Withdraw Money</a></li>
+        </ul>
+      </div>
+    <script src="./home.js"></script>
 
 </body>
 </html>

@@ -152,27 +152,44 @@ body {
 .send-form button:hover {
     transform: scale(1.1);
 }
-.footer{
-    background-color: #343333;
-    color: #ffffff;
-    padding: 20px ;
-    text-align: center;
-    border-radius: 20px;
-    padding-top: -40px;
-}
-.footer .social-icon{
-    margin-top: 0px;
-margin-bottom: 20px;
-}
-.footer .social-icon a {
-    color:#b4b2b2;
-    margin: 0 10px;
-    font-size: 20px;
-    transition: color 0.3s;
-    text-decoration: none;
-    margin-top: -20px;
-}
-.footer .social-icon a:hover {
-    color:#1da1f2;
-}
 
+.sidebar {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 1rem 0;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  }
+  
+  .sidebar-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+  }
+  
+  .sidebar-menu li a:hover {
+    background-color: #333;
+    color: #00aaff;
+  }
+  
+  .footer {
+    background-color: #1c1c1c;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 80px;
+    border-top: 1px solid #333;
+    color: #aaa;
+  }

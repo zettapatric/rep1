@@ -1,69 +1,60 @@
-// JavaScript for Cart Management
-let cart = [];
-
-const addToCartButtons = document.querySelectorAll(".product-card button");
-const cartModal = document.getElementById("cartModal");
-const cartItemsContainer = document.getElementById("cartItems");
-const cartCount = document.getElementById("cartCount");
-
-// Update Cart UI
-function updateCartUI() {
-  cartItemsContainer.innerHTML = "";
-  cart.forEach((item) => {
-    const div = document.createElement("div");
-    div.classList.add("cart-item");
-    div.innerHTML = `
-      <p><strong>${item.name}</strong> - ${item.price}</p>
-    `;
-    cartItemsContainer.appendChild(div);
-  });
-  cartCount.textContent = cart.length;
+function hideAllSections() {
+    document.querySelectorAll('.section-content, .form-container').forEach(section => {
+        section.style.display = 'none';
+    });
 }
 
-// Add Item to Cart
-addToCartButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    const productCard = button.parentElement;
-    const productName = productCard.querySelector("h3").innerText;
-    const productPrice = productCard.querySelector("p").innerText;
-
-    cart.push({ name: productName, price: productPrice });
-    updateCartUI();
-    alert(`${productName} has been added to your cart.`);
-  });
+document.getElementById('homeLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('homeContent').style.display = 'block';
 });
 
-// Toggle Cart Modal
-const cartToggle = document.getElementById("cartToggle");
-const cartClose = document.getElementById("cartClose");
-
-cartToggle.addEventListener("click", () => {
-  cartModal.classList.toggle("show");
+document.getElementById('sendLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('sendContent').style.display = 'block';
 });
 
-cartClose.addEventListener("click", () => {
-  cartModal.classList.remove("show");
+document.getElementById('historyLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('historyContent').style.display = 'block';
 });
 
-// Hero Section Text Rotation (Slideshow)
-const heroTexts = [
-  "Explore the latest fashion trends",
-  "Be bold, be stylish, be you",
-  "New arrivals every week!"
-];
+document.getElementById('balanceLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('balanceContent').style.display = 'block';
+});
 
-let heroIndex = 0;
-const heroParagraph = document.querySelector(".hero p");
+document.getElementById('signinLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('signinForm').style.display = 'block';
+});
 
-setInterval(() => {
-  heroIndex = (heroIndex + 1) % heroTexts.length;
-  heroParagraph.textContent = heroTexts[heroIndex];
-}, 4000);
+document.getElementById('signupLink').addEventListener('click', function() {
+    hideAllSections();
+    document.getElementById('signupForm').style.display = 'block';
+});
+document.getElementById('sendMoneyButton').addEventListener('click', function() {
+    const recipientNumber = document.getElementById('recipientNumber').value;
+    const amount = document.getElementById('amount').value;
+    const pin = document.getElementById('pin').value;
 
-// Cart Modal Management (Optional)
-// Close cart modal if clicked outside
-window.addEventListener("click", (e) => {
-  if (e.target === cartModal) {
-    cartModal.classList.remove("show");
-  }
+    if (!recipientNumber || !amount || !pin) {
+        alert('Please fill in all fields.');
+    } else {
+        // Inshingano zo kohereza amafaranga (ushobora kuyishyira mu API cyangwa ibindi bisabwa)
+        alert(`Sending ${amount} to ${recipientNumber}...`);
+    }
+});
+document.getElementById('depositButton').addEventListener('click', function() {
+    const depositAmount = document.getElementById('depositAmount').value;
+    const currentBalanceElement = document.getElementById('currentBalance');
+    let currentBalance = parseFloat(currentBalanceElement.textContent.replace('$', ''));
+
+    if (!depositAmount || depositAmount <= 0) {
+        alert('Please enter a valid deposit amount.');
+    } else {
+        currentBalance += parseFloat(depositAmount);
+        currentBalanceElement.textContent = `$${currentBalance.toFixed(2)}`;
+        alert(`You have successfully deposited $${depositAmount}. Your new balance is $${currentBalance.toFixed(2)}.`);
+    }
 });

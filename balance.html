@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PAYHub - Balance</title>
+  <link rel="stylesheet" href="balance.css">
+</head>
+<body>
+  <!-- Balance Section -->
+  <div class="main-box">
+    <h2 style="margin-bottom: 20px;">Balance Overview</h2>
+    <p style="margin-bottom: 30px;">Check your balance and make transactions</p>
+    <div class="balance-amount">$1,250.00</div>
+    <div class="balance-buttons">
+      <button onclick="handleDeposit()">Deposit</button>
+      <button onclick="handleWithdraw()">Withdraw</button>
+      <button onclick="handleSend()"><a href="./send money.html" style="text-decoration: none; color: white;">Send money</a></button>
+    </div>
+  </div>
+   <div class="button">
+  <a href="./index.html">Back</a>
+   </div>
+  <script>
+    function handleDeposit() {
+      alert("Redirecting to Deposit page...");
+    }
+
+    function handleWithdraw() {
+      alert("Redirecting to Withdraw page...");
+    }
+  </script>
+</body>
+</html>
