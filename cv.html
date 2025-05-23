@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patric Zetta - Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <style>
+        /* Specific styles for the CV page, can be moved to style.css */
+        .cv-section {
+            padding: 80px 0;
+            background-color: var(--light-color);
+        }
+
+        .cv-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .cv-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .cv-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .cv-header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+        }
+
+        .cv-contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cv-contact-info span {
+            font-size: 0.9rem;
+            color: var(--text-color);
+        }
+
+        .cv-contact-info i {
+            margin-right: 5px;
+            color: var(--primary-color);
+        }
+
+        .cv-section-title {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+
+        .cv-item {
+            margin-bottom: 30px;
+        }
+
+        .cv-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--dark-color);
+        }
+
+        .cv-item h4 {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .cv-item p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: var(--text-color);
+        }
+
+        .cv-item ul {
+            list-style: disc;
+            margin-left: 25px;
+            margin-top: 10px;
+            color: var(--text-color);
+        }
+
+        .cv-item ul li {
+            margin-bottom: 5px;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                padding: 20px;
+            }
+
+            .cv-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .cv-section-title {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Portfolio</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="cv.html" class="nav-link active">CV</a></li> <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1>My Curriculum Vitae</h1>
+            <p>A detailed overview of my professional journey, skills, and accomplishments.</p>
+        </div>
+    </section>
+
+    <section class="cv-section">
+        <div class="cv-container">
+            <div class="cv-header">
+                <h1>Patric HAGENIMANA</h1>
+                <p>Creative Developer & Problem Solver</p>
+                <div class="cv-contact-info">
+                    <span><i class="fas fa-envelope"></i> zettapatric120@gmail.com</span>
+                    <span><i class="fas fa-phone"></i> +250 798 983 567</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Kabarore, Gatsibo</span>
+                </div>
+            </div>
+
+            <h2 class="cv-section-title">Summary</h2>
+            <div class="cv-item">
+                <p>Highly motivated and results-oriented Creative Developer with 1 month of experience in building responsive and user-friendly web applications. Proficient in HTML, CSS, and JavaScript, with a passion for learning new technologies and solving complex problems. Eager to contribute to innovative projects and grow in a dynamic team environment.</p>
+            </div>
+
+            <h2 class="cv-section-title">Experience</h2>
+            <div class="cv-item">
+                <h3>Junior Web Developer</h3>
+                <h4>Tech Solutions Inc. | Kigali, Rwanda | May 2025 - Present</h4>
+                <ul>
+                    <li>Developed and maintained responsive web interfaces using HTML5, CSS3, and JavaScript.</li>
+                    <li>Collaborated with senior developers to implement new features and optimize existing code.</li>
+                    <li>Assisted in debugging and troubleshooting front-end issues.</li>
+                    <li>Participated in daily stand-ups and contributed to project planning discussions.</li>
+                </ul>
+            </div>
+            <h2 class="cv-section-title">Education</h2>
+            <div class="cv-item">
+                <h3>Certificate of Science in Computer Science/Software Development</h3>
+                <h4>GARDEN TSS | Kibungo, NGOMA | 2024 - 2025 (Expected)</h4>
+                <p>Relevant coursework: Web Development.</p>
+            </div>
+            <h2 class="cv-section-title">Skills</h2>
+            <div class="cv-item">
+                <h3>Technical Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML5</span>
+                    <span class="skill-tag">CSS3</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Responsive Design</span>
+                    <span class="skill-tag">Git & GitHub</span>
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Front-end Frameworks (Basic)</span>
+                    </div>
+            </div>
+            <div class="cv-item">
+                <h3>Soft Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Problem-Solving</span>
+                    <span class="skill-tag">Teamwork</span>
+                    <span class="skill-tag">Communication</span>
+                    <span class="skill-tag">Adaptability</span>
+                    <span class="skill-tag">Time Management</span>
+                    </div>
+            </div>
+
+            <h2 class="cv-section-title">Projects</h2>
+            <div class="cv-item">
+                <h3>EcoTrack App</h3>
+                <h4>(See Projects page for details)</h4>
+                <ul>
+                    <li>Developed a sustainability tracking platform with data visualization.</li>
+                    <li>Utilized HTML, CSS, and JavaScript for the front-end interface.</li>
+                </ul>
+            </div>
+            <div class="cv-item">
+                <h3>Art Gallery CMS</h3>
+                <h4>(See Projects page for details)</h4>
+                <ul>
+                    <li>Designed and implemented a custom content management system for art galleries.</li>
+                    <li>Focused on intuitive user experience and efficient content management.</li>
+                </ul>
+            </div>
+            <h2 class="cv-section-title">Languages</h2>
+            <div class="cv-item">
+                <p>Kinyarwanda (Native), English (Fluent), French (Intermediate)</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Patric  HAGENIMANA</h3>
+                    <p>Creating digital experiences that inspire and solve real problems.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/PaTrIc" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/Guest_patric" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mutotoofficial" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Patric Zetta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

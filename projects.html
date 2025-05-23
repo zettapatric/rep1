@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="project.css">
+</head>
+<title>View my project</title>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="projects.html">Projects</a></li>
+                <li class="nav-item"><a href="skills.html">Skills</a></li>
+                <li class="nav-item"><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <h1>My Projects</h1>
+            <p>Explore my portfolio of creative solutions and innovative designs</p>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-grid">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-item" data-category="web" id="ecotrack">
+                    <div class="project-details">
+                        <h3>EcoTrack App</h3>
+                        <p class="project-category">Web Development</p>
+                        <p class="project-description">A sustainability tracking platform that helps users monitor their environmental impact with beautiful data visualizations.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>D3.js</span>
+                        </div>
+                        <a href="view study echo track.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="echo.png" alt="echo">
+                        <div class="project-overlay">
+                            <a href="demo.html" class="view-project">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item" data-category="design" id="artgallery">
+                    <div class="project-details">
+                        <h3>Art Gallery CMS</h3>
+                        <p class="project-category">UI/UX Design</p>
+                        <p class="project-description">Custom content management system designed specifically for small art galleries to showcase their collections.</p>
+                        <div class="project-tech">
+                            <span>Figma</span>
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="view study echo track.html" class="btn btn-primary">View Case Study</a>
+                    </div>
+                    <div class="project-image">
+                        <img src="Art Gallery.jpeg" alt="Art Gallery">
+                        <div class="project-overlay">
+                            <a href="deemo.html" class="view-project">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Additional projects would follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <script src="project.js"></script>
+</body>
+</html>

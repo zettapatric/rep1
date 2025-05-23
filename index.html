@@ -3,94 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAYHub</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <title>Patric zetta | Creative Developer</title>
+    <link rel="icon" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <circle cx='50' cy='50' r='50' fill='%231074d8'/>
+  <text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle'
+        font-size='50' fill='white' font-family='Arial'>Pz</text>
+</svg>">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav">
-        <span class="logo">PAYHub</span>
-        <a href="#" id="homeLink"><i class="fas fa-home"></i> Home</a>
-        <a href="#" id="sendLink"><i class="fas fa-wallet"></i> Send Money</a>
-        <a href="balance.html" id="balanceLink"><i class="fas fa-credit-card"></i> Balance</a>
-        <a href="#" id="historyLink"><i class="fas fa-history"></i> History</a>
-        <a href="#" id="signinLink"><i class="fas fa-sign-in-alt"></i> Sign In</a>
-        <a href="#" id="signupLink"><i class="fas fa-user-plus"></i> Sign Up</a>
-    </div>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="logo" class="logo-image">Portifolio
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="section-content" id="homeContent" style="display: block; width: 5000px; height: 1000px;">
-        <h2>Welcome to PAYHub!</h2>
-        <p>Your secure and easy digital payment solution.</p>
-        <p>Payhub helps people's in the world to save his/her</p>
-        <p>money and easy deposite/withdraw money and send to someone </p>
-        <p>means that, it is work as mobile money, banking service</p>
-        <p>it comes to simplify all activities done with those</p>
-        <p>paid services above. </p>
-        <footer class="footer">
-            <div class="footer-content">
-                <p>&copy 2025 payhub.</p>
-                <p>your can join to payhub </p>
-                <p>by using sicial media here</p>
-                <div class="social-icon">
-                    <a href="https://facebook.com" target="_blank" aria-label="facebook">facebook</a>
-                    <a href="https://twitter.com" target="_blank" aria-label="twitter">Twitter</a>
-                    <a href="https://instagram.com" target="_blank" aria_label="instagram">instagram</a>
-                    <a href="https://linkedIn.com" target="_blank" aria_label="linkedIn">linkedIn</a>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Patric HAGENIMANA</h1>
+                <p class="hero-subtitle">Creative Developer & Problem Solver</p>
+                <div class="hero-btns">
+                    <a href="#about" class="btn btn-primary">Explore My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
-        </footer>
-    </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="zetta.jpg" alt="zetta patric" class="zetta">
+                    <div class="shape-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-    <div class="section-content" id="sendContent" style="margin-top: 300px;">
-        <h2><i class="fas fa-wallet"></i> Send Money</h2>
-        <p>Send money instantly to anyone, anytime.</p>
-        <p>by entering your recievers number and amount </p>
-        <p>you are going to pay and then enter </p>
-        <p>your password to comfirm the action</p>
-        <div class="send-form">
-            <input type="text" placeholder="Enter recipient's number" id="recipientNumber">
-            <input type="number" placeholder="Enter amount" id="amount" min="1" step="any">
-            <input type="password" placeholder="Enter your PIN" id="pin">
-            <button class="btn" id="sendMoneyButton"><i class="fas fa-paper-plane"></i> Send Money</button>
-            <footer class="footer" style="background-color: #353434; margin-top: 40px;">
-                <div class="footer-content">
-                    <p>&copy 2025 payhub.</p>
-                    <p>your can join to payhub </p>
-                    <p>by using sicial media here</p>
-                    <div class="social-icon">
-                        <a href="https://facebook.com" target="_blank" aria-label="facebook">facebook</a>
-                        <a href="https://twitter.com" target="_blank" aria-label="twitter">Twitter</a>
-                        <a href="https://instagram.com" target="_blank" aria_label="instagram">instagram</a>
-                        <a href="https://linkedIn.com" target="_blank" aria_label="linkedIn">linkedIn</a>
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate and detail-oriented web developer with a strong focus on creating user-friendly and responsive websites. I enjoy turning ideas into real, functional applications using clean code and creative design. My main tools include HTML, CSS and JavaScript, and I love learning new technologies to grow both personally and professionally.</p>
+                    <p>When I'm not coding, I like exploring new trends in tech, collaborating on projects, and finding ways to solve real-world problems with digital solutions.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Patric HAGENIMANA</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">zettapatric120@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">From:</span>
+                            <span class="info-value">Rwanda, RW</span>
+                        </div>
+                    </div>
+                    <a href="cv.html" class="btn btn-primary download-cv">Download CV</a>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="1">0</div>
+                        <div class="stat-label">Monthly Experience</div>
                     </div>
                 </div>
-            </footer>
+            </div>
         </div>
-    </div>
-    
-    <div class="section-content" id="historyContent">
-        <h2><i class="fas fa-history"></i> Transaction History</h2>
-        <p>View your past transactions securely.</p>
-    </div>
+    </section>
 
+    <section class="featured-projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="echo.png" alt="echo">
+                        <div class="project-overlay">
+                            <a href="projects.html#ecotrack" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">EcoTrack App</h3>
+                    <p class="project-description">Sustainability tracking platform with data visualization</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Art Gallery.jpeg" alt="Art Gallery">
+                        <div class="project-overlay">
+                            <a href="projects.html" class="view-project">View Project</a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Art Gallery CMS</h3>
+                    <p class="project-description">Custom content management system for art galleries</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="projects.html" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
 
-    <div class="form-container" id="signinForm">
-        <h2><i class="fas fa-user"></i> Sign In</h2>
-        <input type="text" placeholder="Enter email" id="signinEmail">
-        <input type="password" placeholder="Enter password" id="signinPassword">
-        <button class="btn" id="signinButton"><i class="fas fa-sign-in-alt"></i> Login</button>
-    </div>
+    <section class="image-album">
+        <div class="container">
+            <h2 class="section-title">My Picture</h2>
+            <div class="album-grid">
+                <div class="album-item">
+                    <img src="zetta.jpg" alt="zetta">
+                </div>
+                <div class="album-item">
+                    <img src="c:\Users\PATRIC\Pictures\g.PNG" alt="c:\Users\PATRIC\Pictures\g">
+                </div>
+                <div class="album-item">
+                    <img src="c:\Users\PATRIC\Pictures\Camera Roll\WIN_20250511_08_14_15_Pro.jpg" alt="c:\Users\PATRIC\Pictures\Camera Roll\WIN_20250511_08_14_15_Pro">
+                </div>
+                <div class="album-item">
+                    <img src="c:\Users\PATRIC\Downloads\ChatGPT Image Apr 24, 2025, 03_04_18 PM.png" alt="c:\Users\PATRIC\Downloads\ChatGPT Image Apr 24, 2025, 03_04_18 PM">
+                </div>
+        </div>
+    </section>
 
-    <div class="form-container" id="signupForm">
-        <h2><i class="fas fa-user-plus"></i> Sign Up</h2>
-        <input type="text" placeholder="Enter name" id="signupName">
-        <input type="text" placeholder="Enter email" id="signupEmail">
-        <input type="password" placeholder="Enter password" id="signupPassword">
-        <button class="btn" id="signupButton"><i class="fas fa-user-check"></i> Register</button>
-    </div> 
-    
-    <script src="./script.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Patric Zetta</h3>
+                    <p>Creating digital experiences that inspire and solve real problems.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Pa Tr Ic" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/Guest_patric" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@mutotoofficial" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Patric Zetta. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

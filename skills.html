@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="skills.css">
+</head>
+<title>View my skills</title>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">
+                    <a href="index.html">Portfolio</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <section class="page-hero">
+        <div class="container">
+            <h1>My Skills</h1>
+            <p>The tools and technologies I use to bring ideas to life</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="technical">Technical Skills</button>
+                <button class="tab-btn" data-tab="design">Design Skills</button>
+                <button class="tab-btn" data-tab="soft">Soft Skills</button>
+            </div>
+            
+            <div class="tab-content active" id="technical">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">JavaScript/TypeScript</div>
+                            <div class="skill-level">50%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">React/React Native</div>
+                            <div class="skill-level">2%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Node.js</div>
+                            <div class="skill-level">10%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <!-- More skills -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="design">
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">UI/UX Design</div>
+                            <div class="skill-level">90%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <div class="skill-name">Figma/Adobe XD</div>
+                            <div class="skill-level">80%</div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <!-- More design skills -->
+                </div>
+            </div>
+            
+            <div class="tab-content" id="soft">
+                <div class="soft-skills">
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Communication</h4>
+                        <p>Clear and effective communication with team members and clients</p>
+                    </div>
+                    <div class="soft-skill-item">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Problem Solving</h4>
+                        <p>Creative approach to overcoming challenges and finding solutions</p>
+                    </div>
+                    <!-- More soft skills -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section class="tools-section">
+        <div class="container">
+            <h2 class="section-title">Tools I Use</h2>
+            <div class="tools-grid">
+                <div class="tool-item">
+                    <img src="vs code.jpeg" alt="vs code">
+                    <span>VS Code</span>
+                </div>
+                <div class="tool-item">
+                    <img src="git.jpeg" alt="git">
+                    <span>Git</span>
+                </div>
+                <!-- More tools -->
+            </div>
+        </div>
+    </section>
+
+    <script src="skills.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Tracker App - Case Study</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .project-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .project-tagline {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        
+        .case-study-btn {
+            display: inline-flex;
+            align-items: center;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .case-study-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+        }
+        
+        .case-study-btn .arrow {
+            margin-left: 8px;
+            transition: transform 0.3s ease;
+        }
+        
+        .case-study-btn.active .arrow {
+            transform: rotate(90deg);
+        }
+        
+        .case-study-content {
+            display: none;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .section-title {
+            color: #3498db;
+            margin: 25px 0 15px 0;
+            font-size: 1.3rem;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: #e0f7fa;
+            color: #00796b;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.8rem;
+        }
+        
+        .screenshot-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .screenshot {
+            flex: 1;
+            min-width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot:hover {
+            transform: scale(1.03);
+        }
+        
+        .process-step {
+            display: flex;
+            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .process-number {
+            background: #3498db;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .challenge-box {
+            background: #fff8e1;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .link-button {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        
+        .link-button:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-card">
+        <h1 class="project-title">Echo Tracker App</h1>
+        <p class="project-tagline">A mobile application for tracking and analyzing sound patterns in your environment</p>
+        
+        <button id="caseStudyBtn" class="case-study-btn" onclick="toggleCaseStudy()">
+            View Case Study
+            <span class="arrow">→</span>
+        </button>
+        
+        <div id="caseStudyContent" class="case-study-content">
+            <h2 class="section-title">Overview</h2>
+            <p>The Echo Tracker App is designed to help users monitor, record, and analyze sound patterns in their environment. It provides real-time sound visualization, historical data tracking, and customizable alerts for specific sound thresholds. The app was developed to assist people with hearing sensitivities, researchers studying sound pollution, and curious individuals wanting to understand their acoustic environment better.</p>
+            
+            <h2 class="section-title">Problem Statement</h2>
+            <p>Many individuals and organizations need to monitor sound levels in their environment but lack accessible tools that go beyond simple decibel measurement. Existing solutions either provided raw data without meaningful interpretation or were prohibitively expensive professional equipment. Echo Tracker bridges this gap by offering sophisticated sound analysis in an intuitive mobile interface.</p>
+            
+            <h2 class="section-title">My Role</h2>
+            <p>As the lead developer and UX designer for this project, my responsibilities included:</p>
+            <ul>
+                <li>Designing the user interface and experience flows</li>
+                <li>Developing the core audio processing algorithms</li>
+                <li>Implementing the mobile frontend (React Native)</li>
+                <li>Building the backend data storage and analysis system</li>
+                <li>Conducting user testing and iterative improvements</li>
+            </ul>
+            
+            <h2 class="section-title">Tools & Technologies</h2>
+            <div>
+                <span class="tech-badge">React Native</span>
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Firebase</span>
+                <span class="tech-badge">TensorFlow Lite</span>
+                <span class="tech-badge">Audio Processing Libraries</span>
+                <span class="tech-badge">Figma</span>
+                <span class="tech-badge">Git</span>
+            </div>
+            
+            <h2 class="section-title">Development Process</h2>
+            <div class="process-step">
+                <div class="process-number">1</div>
+                <div>
+                    <strong>Research & Planning</strong>
+                    <p>Conducted market research, defined user personas, and created technical specifications. Established core metrics for sound analysis beyond simple decibel levels.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">2</div>
+                <div>
+                    <strong>Prototyping</strong>
+                    <p>Developed proof-of-concept for audio processing algorithms. Created low-fidelity UI prototypes for user testing.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">3</div>
+                <div>
+                    <strong>Development</strong>
+                    <p>Built the React Native frontend with custom visualization components. Implemented Python backend services for sound pattern analysis.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">4</div>
+                <div>
+                    <strong>Testing</strong>
+                    <p>Conducted extensive field testing in various environments. Optimized battery consumption during continuous recording.</p>
+                </div>
+            </div>
+            <div class="process-step">
+                <div class="process-number">5</div>
+                <div>
+                    <strong>Deployment</strong>
+                    <p>Launched on both iOS and Android platforms. Implemented automated crash reporting and performance monitoring.</p>
+                </div>
+            </div>
+            
+            <h2 class="section-title">Challenges & Solutions</h2>
+            <div class="challenge-box">
+                <p><strong>Challenge:</strong> Real-time audio processing on mobile devices without excessive battery drain</p>
+                <p><strong>Solution:</strong> Developed optimized algorithms that balance analysis depth with performance, with adjustable quality settings</p>
+            </div>
+            <div class="challenge-box">
+                <p><strong>Challenge:</strong> Presenting complex sound data in an intuitive way for non-technical users</p>
+                <p><strong>Solution:</strong> Created visual metaphors and simplified metrics that convey meaningful information without technical jargon</p>
+            </div>
+            
+            <h2 class="section-title">Screenshots</h2>
+            <div class="screenshot-container">
+                <img src="https://via.placeholder.com/300x600/3498db/ffffff?text=Home+Screen" alt="App Home Screen" class="screenshot">
+                <img src="https://via.placeholder.com/300x600/2ecc71/ffffff?text=Sound+Analysis" alt="Sound Analysis Screen" class="screenshot">
+                <img src="https://via.placeholder.com/300x600/e74c3c/ffffff?text=History+View" alt="History View" class="screenshot">
+            </div>
+            
+            <h2 class="section-title">Key Learnings</h2>
+            <ul>
+                <li>Audio processing on mobile requires careful resource management</li>
+                <li>Visual representation of abstract data significantly impacts usability</li>
+                <li>Contextual help features are crucial for scientific applications used by general public</li>
+                <li>Battery optimization is a major factor in continuous sensing applications</li>
+            </ul>
+            
+            <h2 class="section-title">Project Links</h2>
+            <a href="#" class="link-button">Live Demo</a>
+            <a href="#" class="link-button">GitHub Repository</a>
+            <a href="#" class="link-button">App Store</a>
+            <a href="#" class="link-button">Google Play</a>
+        </div>
+    </div>
+
+    <script>
+        function toggleCaseStudy() {
+            const btn = document.getElementById('caseStudyBtn');
+            const content = document.getElementById('caseStudyContent');
+            
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                btn.classList.remove('active');
+            } else {
+                content.style.display = 'block';
+                btn.classList.add('active');
+                content.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+    </script>
+</body>
+</html>
